@@ -213,6 +213,10 @@ config ARCH_MSM8994
 	  This enables support for the MSM8994 chipset. If you dont
 	  know what do here, say N
 
+config ARCH_MSM8994_B3
+	bool "Enable Support for HTC Butterfly3"
+	default n
+
 config ARCH_MSM8994_V1_TLBI_WA
 	bool "Enable MSM8994 v1 TLBI workaround"
 	depends on ARCH_MSM8994
