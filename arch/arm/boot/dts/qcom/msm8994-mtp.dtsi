@@ -380,7 +380,7 @@
 
 	i2c@f9928000 { 	/*BLSP6, namely BLSP2 QUP0 */
 		status = "ok";
-		sii8620@72 {
+		mhl_sii8620: sii8620@72 {
 			compatible = "mhl-sii8620";
 			reg = <0x72>;
 			interrupt-parent = <&msm_gpio>;
