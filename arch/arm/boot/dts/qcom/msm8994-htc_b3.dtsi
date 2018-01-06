@@ -144,7 +144,6 @@
 			pinctrl-0 = <&mcu_init>;
 			touch_enable = <1>;
 			vibrate_ms = <25>;
-			project_name_b3 = <1>;
 		};
 
 		htc_mcu_flash@39 {
