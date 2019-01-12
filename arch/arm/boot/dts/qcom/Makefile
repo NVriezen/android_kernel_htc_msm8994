@@ -224,6 +224,20 @@ dtb-$(CONFIG_ARCH_APQ8084) += apq8084-v1.0-old-pwr-grid-liquid.dtb \
 	apq8084-v1.1-old-pwr-grid-mdm9x35-alt-cdp.dtb \
 	apq8084-v1.1-mdm9x35-alt-cdp.dtb \
 	apq8084-v1.1-sbc.dtb
+ifneq ($(CONFIG_ARCH_MSM8994_B3),)
+dtb-$(CONFIG_ARCH_MSM8994) += \
+	msm8994-v1-mtp.dtb \
+	msm8994-htc_hima-xa.dtb \
+	msm8994-htc_hima-xb.dtb \
+	msm8994-v1-htc_hima-xc.dtb \
+	msm8994-v1-htc_hima-xd.dtb \
+	msm8994-v2.0-htc_hima-xc.dtb \
+	msm8994-v2.0-htc_hima-xd.dtb \
+	msm8994-v2.0-htc_hima-pvt.dtb \
+	msm8994-v2.1-htc_hima-xc.dtb \
+	msm8994-v2.1-htc_hima-xd.dtb \
+	msm8994-v2.1-htc_hima-pvt.dtb
+else
 dtb-$(CONFIG_ARCH_MSM8994) += \
 	msm8994-v1-mtp.dtb \
 	msm8994-v1-htc_b3-xa.dtb \
@@ -237,17 +251,8 @@ dtb-$(CONFIG_ARCH_MSM8994) += \
 	msm8994-v2.1-htc_b3-xb.dtb \
 	msm8994-v2.1-htc_b3-xc.dtb \
 	msm8994-v2.1-htc_b3-xd.dtb \
-	msm8994-v2.1-htc_b3-pvt.dtb \
-	msm8994-htc_hima-xa.dtb \
-	msm8994-htc_hima-xb.dtb \
-	msm8994-v1-htc_hima-xc.dtb \
-	msm8994-v1-htc_hima-xd.dtb \
-	msm8994-v2.0-htc_hima-xc.dtb \
-	msm8994-v2.0-htc_hima-xd.dtb \
-	msm8994-v2.0-htc_hima-pvt.dtb \
-	msm8994-v2.1-htc_hima-xc.dtb \
-	msm8994-v2.1-htc_hima-xd.dtb \
-	msm8994-v2.1-htc_hima-pvt.dtb \
+	msm8994-v2.1-htc_b3-pvt.dtb
+endif
 
 dtb-$(CONFIG_ARCH_MSM8992) += msm8992-sim.dtb \
 	msm8992-rumi.dtb \
